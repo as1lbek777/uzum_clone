@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+
+body {
+  width: 100vw;
+  height: auto;
+  background-color: #ffffff;
+  user-select: none;
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 600;
+}
