@@ -315,7 +315,7 @@ const Navbar = () => {
           />
           <span className="">Hafta tovarlari</span>
         </a>
-        <ul className="flex items-center gap-6">
+        <ul className="flex items-center gap-[21px]">
           {mahsulotKategoriya.map((item, inx) => {
             return (
               <li key={inx}>

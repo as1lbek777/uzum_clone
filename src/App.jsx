@@ -3,6 +3,8 @@ import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import { motion } from "framer-motion";
 import { FaArrowUp } from "react-icons/fa";
+import Slider from "./components/mainSections/slider";
+import ProductCard1 from "./components/mainSections/productCard1";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,9 +24,10 @@ const App = () => {
   return (
     <>
       <Navbar />
-
-      <div className="main-content"></div>
-
+      <main className="main-content">
+        <Slider />
+        <ProductCard1 />
+      </main>
       <Footer />
 
       {isVisible && (
