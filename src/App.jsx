@@ -3,7 +3,7 @@ import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import { motion } from "framer-motion";
 import { FaArrowUp } from "react-icons/fa";
-import Slider from "./components/mainSections/slider";
+import Slider from "./components/mainSections/imgSlider";
 import ProductCard1 from "./components/mainSections/productCard1";
 
 const App = () => {
