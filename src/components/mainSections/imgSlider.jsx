@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import data from "../../data";
 import { motion, AnimatePresence } from "motion/react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -6,9 +6,6 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const Slider = () => {
   const { sliderImages, fourtProduct } = data;
   const [slider, setSlider] = useState(0);
-  setTimeout(() => {
-    slider[0] = sliderImages[0];
-  }, 5000);
   const prevSlide = () => {
     return setSlider(
       (prev) => prev - 1 + (sliderImages.length % sliderImages.length)
@@ -17,6 +14,14 @@ const Slider = () => {
   const nextSlide = () => {
     setSlider((next) => next + (1 % sliderImages.length));
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlider((prev) => (prev + 1) % sliderImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [sliderImages.length]);
   return (
     <section className="max-w-[1250px] h-4/5 mx-auto mt-14">
       <div className="relative w-full h-[410px] mx-auto overflow-hidden rounded-xl shadow-lg">
