@@ -15,7 +15,7 @@ const Slider7Product = () => {
 
   const [index, setIndex] = useState(0);
   const cardsPerPage = 5;
-  const limitedProducts = productCard.slice(10, 30);
+  const limitedProducts = productCard.slice(30, 50);
 
   useEffect(() => {
     localStorage.setItem("likedProducts", JSON.stringify(likedProducts));

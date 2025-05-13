@@ -52,7 +52,7 @@ const Navbar = () => {
                 onClick={handleMashrut}
               >
                 <MdOutlineAddLocationAlt size={22} />
-                <span className="flex items-center  gap-1 font-semibold">
+                <span className="flex items-center  gap-1">
                   Toshkent
                   <motion.span
                     key={mashrut ? "close" : "menu"}
@@ -71,7 +71,7 @@ const Navbar = () => {
                   </motion.span>
                 </span>
               </a>
-              <a href="#" className="font-semibold text-[15px] text-[#1F202D]">
+              <a href="#" className="text-[15px] text-[#1F202D]">
                 Topshirish punktlari
               </a>
             </div>
@@ -327,7 +327,7 @@ const Navbar = () => {
                 <li key={inx}>
                   <motion.a
                     href="#"
-                    className="cursor-pointer text-[15px] font-normal text-[gray] hover:text-[#2a2929] transition-all"
+                    className="cursor-pointer text-[15px] text-[gray] hover:text-[#2a2929] transition-all"
                   >
                     <span>{item}</span>
                   </motion.a>
@@ -338,7 +338,7 @@ const Navbar = () => {
               <motion.a
                 onClick={handleKatalog}
                 href="#"
-                className="flex items-center justify-center gap-1 text-[gray] hover:text-[#2A2929] transition-all font-normal"
+                className="flex items-center justify-center gap-1 text-[gray] hover:text-[#2A2929] transition-all"
               >
                 Yana
                 <motion.span
