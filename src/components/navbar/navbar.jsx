@@ -7,11 +7,11 @@ import {
   FaRegUser,
 } from "react-icons/fa";
 import { FcLikePlaceholder } from "react-icons/fc";
-import { ImDrawer } from "react-icons/im";
 import { IoChevronDownSharp, IoChevronUp, IoSearch } from "react-icons/io5";
-import { LuShoppingCart } from "react-icons/lu";
-import { MdClose, MdOutlineAddLocationAlt } from "react-icons/md";
+import { LuGalleryVerticalEnd, LuShoppingCart } from "react-icons/lu";
+import { MdClose } from "react-icons/md";
 import data from "../../data";
+import { CiLocationOn } from "react-icons/ci";
 
 const Navbar = () => {
   const [mashrut, setMashrut] = useState(false);
@@ -51,7 +51,7 @@ const Navbar = () => {
                 href="#"
                 onClick={handleMashrut}
               >
-                <MdOutlineAddLocationAlt size={22} />
+                <CiLocationOn size={22} />
                 <span className="flex items-center  gap-1">
                   Toshkent
                   <motion.span
@@ -251,7 +251,7 @@ const Navbar = () => {
               whileHover={{ backgroundColor: "#CECEEF" }}
               transition={{ duration: 0.3 }}
               href="#"
-              className="bg-[#E5E5FF] px-5 py-2 rounded-[3px] text-[#7F4DFF] flex items-center gap-1.5 cursor-pointer"
+              className="bg-[#E5E5FF] h-[45px] px-5 py-2 rounded-[3px] text-[#7F4DFF] flex items-center gap-1.5 cursor-pointer"
             >
               <motion.span
                 key={katalog ? "close" : "menu"}
@@ -262,7 +262,7 @@ const Navbar = () => {
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 style={{ display: "inline-block" }}
               >
-                {katalog ? <MdClose size={28} /> : <ImDrawer size={28} />}
+                {katalog ? <MdClose size={25} /> : <LuGalleryVerticalEnd size={25} />}
               </motion.span>
               Katalog
             </motion.button>
